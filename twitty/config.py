@@ -18,7 +18,6 @@ def creates_twitter_object():
     # check if credentials are valid
     try:
         api.verify_credentials()
-        print('succes')
     except Exception as e:
         logger.error("Error creating API", exc_info=True)
         raise e
