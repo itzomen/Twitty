@@ -23,7 +23,7 @@ def main():
         logger.info("Sleeping...")
         x += 1
         print(f'followback.py ran {x} time(s), Sleeping...')
-        time.sleep(10)
+        time.sleep(60)
 
 if __name__ == "__main__":
     main()
