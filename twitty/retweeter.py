@@ -26,13 +26,13 @@ def main():
     		          # Like the the tweet
     		          try:
     		          	status.favorite()
-    		          except Exception as e:
+    		          except Exception:
     		          	logger.error(f"Error while liking tweet with id {status.id}", exc_info=True)
     		if not status.retweeted:
     		      #Retweet, since we have not retweeted it yet
     		      try:
     		      	api.retweet(status.id)
-    		      except Exception as e:
+    		      except Exception:
     		      	logger.error(f"Error while retweeting tweet with id {status.id}", exc_info=True)
 
 

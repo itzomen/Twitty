@@ -9,6 +9,7 @@ WORKDIR /twitty
 COPY twitty/config.py /twitty/
 COPY twitty/user.py /twitty/
 COPY twitty/followback.py /twitty/
+COPY twitty/retweeter.py /twitty/
 COPY requirements.txt /tmp
 
 # Install dependencies
