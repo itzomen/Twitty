@@ -1,16 +1,17 @@
 #config.py
 import tweepy
 import logging
+from user import *
 
 # logging to facilitate debug processes
 logger = logging.getLogger()
 
 def creates_twitter_object():
     #creates API object for Twitter Developer account
-    consumer_key = "YOUR CONSUMER KEY"
-    consumer_secret = "YOUR CONSUMER SECRET"
-    access_token = "YOUR ACCESS TOKEN"
-    access_token_secret = "YOUR ACCESS TOKEN SECRET"
+    consumer_key = CONSUMER_KEY
+    consumer_secret = CONSUMER_SECRET
+    access_token = ACCESS_TOKEN
+    access_token_secret = ACCESS_TOKEN_SECRET
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
